@@ -1,0 +1,127 @@
+* {overflow: auto;}
+body{
+    background-color: #8BA1BB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+p.categorie{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.contenu{
+    background-color: white;
+    margin: 0px 10% 20px 10%; 
+    padding: 15px;
+    min-width: 340px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+p.description{
+    text-align: center;
+    max-width: 60%;
+    display: inline-block;
+    font-size: 14px;
+}
+div.centre{
+    text-align: center;
+}
+div.categorie{
+    margin-bottom: -18px;
+    margin-top: 20px;
+}
+div.image{
+    align-content: center;
+    display: block;
+}
+div.separateur{
+    background-color: black;
+    height: 1px;
+    width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div.image{
+    position : relative;
+}
+div.colonne{
+    width: 45%;
+    margin-top: 10px;
+}
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid #6C829D;
+    padding-bottom: 5px;
+}
+div.colonne1{
+    display: inline-block;
+}
+div.colonne2{
+    float: right;
+}
+div.ingredient p{
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding: 8px 0;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+img.image{
+    width : 100%;
+    max-height: 400px; 
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+    background-color: lightgrey;
+}
+table.align_bottom{
+    text-align: center;
+    border:10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    background-color: #6C829D; 
+    opacity: 65%; 
+    border-color:black;
+    color : white
+}
+div.image td{
+    text-align: center;
+    padding: 10px 20px;
+}
+div.preparation p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+div.preparation p.puce{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #6C829D;
+    border-radius: 50%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
+div.preparation p.libelle{
+    vertical-align: top;
+    font-size: 14px;
+    padding-left: 5px;
+}
+div.preparation tr{
+   height: 40px;
+}
