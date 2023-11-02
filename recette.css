@@ -1,3 +1,4 @@
+/* partie commune */
 * {overflow: auto;}
 body{
     background-color: #8BA1BB;
@@ -18,13 +19,6 @@ p.categorie{
     margin-top: 0px;
     font-weight: bold;
     font-size: 16px;
-}
-div.contenu{
-    background-color: white;
-    margin: 0px 10% 20px 10%; 
-    padding: 15px;
-    min-width: 340px;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 p.description{
     text-align: center;
@@ -53,23 +47,6 @@ div.separateur{
 div.image{
     position : relative;
 }
-div.colonne{
-    width: 45%;
-    margin-top: 10px;
-}
-div.colonne h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 15px;
-    border-bottom: 3px solid #6C829D;
-    padding-bottom: 5px;
-}
-div.colonne1{
-    display: inline-block;
-}
-div.colonne2{
-    float: right;
-}
 div.ingredient p{
     text-align: center;
     border: 1px solid lightgrey;
@@ -96,6 +73,10 @@ table.align_bottom{
     opacity: 65%; 
     border-color:black;
     color : white
+}
+div.image.th{
+    text-align: center;
+    padding: 10px 20px;
 }
 div.image td{
     text-align: center;
@@ -125,3 +106,72 @@ div.preparation p.libelle{
 div.preparation tr{
    height: 40px;
 }
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid #6C829D;
+    padding-bottom: 5px;
+}
+
+/* Partie ecran width >1000 */
+@media only screen and (min-width: 1000px) {
+    div.contenu{
+        background-color: white;
+        margin-left: auto; 
+        margin-right: auto;
+        padding: 15px;
+        min-width: 340px;
+        max-width: 943px;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+        overflow: visible;
+    }
+    }
+
+/* Partie css ordinateur */
+@media only screen and (min-width: 769px) {
+div.contenu{
+    background-color: white; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 15px;
+    min-width: 340px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+div.colonne{
+    width: 45%;
+    margin-top: 10px;
+}
+div.colonne1{
+    display: inline-block;
+}
+div.colonne2{
+    float: right;
+}
+}
+
+/* Partie css mobile */
+@media only screen and (max-width: 768px) {
+
+div.contenu{
+    background-color: white;
+    margin: 0px 8px 80px 8px; 
+    padding: 10px 8px 16px 8px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+div.colonne{
+    margin-top: 20px;
+}
+table.align_bottom{
+    height: 50px;
+}
+table.align_bottom th{
+    font-size: 14px;
+}
+table.align_bottom td{
+    font-size: 12px;
+}
+}
+
